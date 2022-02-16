@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="main-header">Formularz</h1>
+        <form class="form" action="https:/dev.cotenfrontend.pl" method="post">
+            <input class="input--right" type="submit" value="Udostępnij">
+
+            <p>
+                <label for="firstName">Twoje imię:</label>
+                <input
+                 class="input"
+                 type="text"
+                 id="firstName"
+                 name="firstName"
+                 placeholder="Wpisz imię"
+                 required>
+            </p>
+
+            <p>
+                <label for="lastName">Twoje nazwisko:</label>
+                <input
+                 class="input"
+                 type="text"
+                 id="lastName"
+                 name="lastName"
+                 placeholder="Wpisz nazwisko"
+                 required>
+            </p>
+
+            <p>
+                <label for="email">Twój email:</label>
+                <input
+                 class="input"
+                 type="email"
+                 id="email"
+                 name="email"
+                 placeholder="Wpisz email">
+            </p>
+
+            <p>
+                <label for="tel">Twój numer tel.:</label>
+                <input
+                 class="input"
+                 type="tel"
+                 id="tel"
+                 name="tel"
+                 placeholder="Wpisz telefon">
+            </p>
+
+            <p>
+                <label for="pass">Twoje hasło:</label>
+                <input
+                 class="input"
+                 type="password"
+                 id="pass"
+                 name="pass"
+                 placeholder="Wpisz hasło">
+            </p>
+
+            <p>
+                <label for="rank">Ocena:</label>
+                <input
+                 class="input"
+                 type="range"
+                 id="rank"
+                 name="rank"
+                 min="0"
+                 max="100"
+                 step="1">
+            </p>
+
+            <p>
+                <label for="file">Twoje zdjęcie:</label>
+                <input
+                 class="input"
+                 type="file"
+                 id="file"
+                 name="file"
+                 placeholder="Wpisz imię">
+            </p>
+
+            <fieldset class="input">
+                <legend>Chipsy:</legend>
+                <p>
+                    <label for="country">Kraj:</label>
+                    <input
+                    class="input"
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Wpisz kraj">
+                </p>
+
+                <p>
+                    <label for="city">Kraj:</label>
+                    <input
+                    class="input"
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Wpisz miasto">
+                </p>
+            </fieldset>
+
+            <fieldset class="input">
+                <legend>Chipsy:</legend>
+                <p>
+                    <label><input type="radio" id="chips" name="chips" value="Salt"> solone</label>
+                </p>
+
+                <p>
+                    <label><input type="radio" id="chips" name="chips" value="Onion" checked> cebulowe</label>
+                </p>
+                <p>
+                    <label><input type="radio" id="chips" name="chips" value="hot"> ostre</label>
+                </p>
+            </fieldset>
+            <p>
+                <label>Wybierz zespół:
+                    <select id="band" class="input">
+                        <option value="muse">Muse</option>
+                        <option value="radiohead">Radiohead</option>
+                        <option value="depeche-mode">Depeche Mode</option>
+                        <option value="nirvana">Nirvana</option>
+                        <option value="rhcp" selected>Red Hot Chili Peppers</option>
+                        <option value="green-day">Green Day</option>
+                        <option value="myslovitz">Myslovitz</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label><input type="checkbox" id="agreement" name="agreement" value="agree" checked> Zgadzam się.</label>
+            </p>
+
+            <textarea class="area"></textarea>
+        </form>
+    </main>
+</body>
+</html>
